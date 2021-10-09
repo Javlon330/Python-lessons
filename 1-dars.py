@@ -8,3 +8,4 @@
 # for i in range(2,11):
 #     if not (x%i):
 #         print(f"{x} soni {i} ga qoldiqsiz bolinadi" )
+# kop uchraydigan hatoliklar
