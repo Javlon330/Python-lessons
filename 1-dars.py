@@ -60,4 +60,24 @@ python_il = {
 # if poytaxt == None:
 #     print("Bunday davlat haqida ma'lumot yoq")
 # else :
-#     print(f"{davlat.upper()} ning poytaxti {poytaxt.title()}")
+#     print(f"{davlat.upper()} ning poytaxti {poytaxt.title()}") 
+menu = {
+    'shashlik':15000,
+    'qatlet':24000,
+    'tabaqa': 45000,
+    'manti' : 12000,
+    'baliq' : 55000,
+    'somsa' : 7000,
+    'barak' : 17000
+}
+taom = []
+print('3 ta taom buyurtma qiling')
+for i in range(3):
+    taom.append( input(f"{i+1} taom : ").lower())
+for zakaz in taom:
+    if zakaz in menu:
+        print(f"{zakaz} {menu[zakaz]} so'm ")
+    else:
+        print(f"Kechirasiz bizda {zakaz} yo'q ")
+
+
