@@ -38,15 +38,88 @@
 #         ildiz = float(qiymat)**(0.5)
 #         print(f"{qiymat} ning ildizi {ildiz} ga teng")
     
-buyurtmalar = []
-ishora = True
-while ishora:
+# buyurtmalar = []
+# ishora = True
+# while ishora:
 
-    mahsulot = input("Mahsulot nomi kiriting : ")
-    if mahsulot == 'Exit':
-        ishora = False
-    buyurtmalar.append(mahsulot)
-print("\n Quyidagi buyurtmalar qanul qilindi")
-for buyurtma in buyurtmalar:
+#     mahsulot = input("Mahsulot nomi kiriting : ")
+#     if mahsulot == 'Exit':
+#         ishora = False
+#     buyurtmalar.append(mahsulot)
+# print("\n Quyidagi buyurtmalar qanul qilindi")
+# for buyurtma in buyurtmalar:
     
-    print(buyurtma)
+#     print(buyurtma)
+# e_bozor = {}
+# while True:
+#     marka = input("Telefon nomi : ")
+#     narhi = int(input('Telefon narxi : '))
+#     e_bozor[marka]=narhi
+#     info = input("Yana elemt qoshishni hohlaysizmi ha/yoq : ")
+#     if info == 'ha':
+#         continue
+#     else:
+#         break
+# for t,n in e_bozor.items():
+#     print(f" {t} - {n} so'm ")
+
+
+# for telefon in buyurtma:
+#     if telefon in e_bozor.keys():
+#         print(e_bozor[telefon])
+#     else : 
+# #         print("Bunday mahsulot yoq")
+# buyurtmalar = ['iphone x','samsung A50','redmi note8','pocox3 pro','redmi magic']
+# mahsulotlar = {
+#     'iphone x': 12000,
+#     'samsung A50' : 212333,
+#     'iphone 13promax' : 13000,
+#     'redmi note8' : 700,
+#     'redmi magic' : 900
+#     }
+# while buyurtmalar:
+#     buyurtma = buyurtmalar.pop()
+#     if buyurtma in mahsulotlar.keys():
+#         narh = mahsulotlar[buyurtma]
+#         print(f" {buyurtma.title()} - {narh} so'm ")
+#     else:
+#         print(f"Bizda bunday {buyurtma} yo'q  ")
+# def yilini_hisobla(ism,yosh):
+#     """ Yilini hisobla """ 
+#     print(f" {ism} {2021 - yosh } yil ")
+# ism = input('ismingizni kiriting : ')
+# yosh = int(input('yoshingizni kiriting : '))
+# yilini_hisobla(ism, yosh)
+# def kv_hb(x):
+#     """Kvadrat hisoblaydigan funksiya"""
+#     x = x**2
+#     print(x)
+# kv_hb(int(input('son kiriting : ')))
+# def juft_toq(x):
+#     """  Sonning juft toqligini jisoblaydigan funksiya"""
+#     if x%2:
+#         print('Toq son')
+#     else :
+#         print('Juft son')
+
+# y = float(input("Son kiriting : "))
+# juft_toq(y)
+# def maxx(x,y):
+#     if x == y:
+#         print("Sonlar teng ")
+#     elif x > y:
+#         print(x)
+#     else :
+#         print(y)
+# def n_daraja(x,y):
+#     n = x**y
+#     print(n)
+
+# x,y = map(float,input().split())
+# n_daraja(x, y)
+def bol_alomatlari(x):
+    """ Sonlarni bolinish alomatlari """
+    for i in range(2,11):
+        if  not x % i :
+            print(f" {x} - {i} ga qoldiqsiz bolinadi  ")
+bol_alomatlari(float(input(" SOn kiriting : ")))
