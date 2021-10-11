@@ -133,37 +133,44 @@
 #     for kino in kinolar:
 #         print(kino)
 
-davlatlar = {
-    "O'zbekiston" : {
-        'Poytaxti' : 'Toshkent',
-        'Hududi' : 448978,
-        'Aholisi' : 30000000,
-        "Pul birligi" : "so'm"
-    },
-    "Rossiya" : {
-        'Poytaxti' : 'Moskva',
-        'Hududi' :17980746,
-        'Aholisi' : 144000000,
-        "Pul birligi" : "rubl"
-    },
-    "AQSH" : {
-        'Poytaxti' : 'Vashington',
-        'Hududi' : 92432423,
-        'Aholisi' : 327000000,
-        "Pul birligi" : "dollor"
-    }
-}
-davlat = input("Davlat nomini kiriting :")
-if davlat in davlatlar:
-    info = davlatlar[davlat]
-    print(
-        f" {davlat.upper()}ning poytaxti {info['Poytaxti']} "
-        f"\n Hududi : {info['Hududi']} "
-        f"\n Aholisi : {info['Aholisi']} "
-        f"\n pul birligi : {info['Pul birligi']} "
-    )
-
-
+# davlatlar = {
+#     "O'zbekiston" : {
+#         'Poytaxti' : 'Toshkent',
+#         'Hududi' : 448978,
+#         'Aholisi' : 30000000,
+#         "Pul birligi" : "so'm"
+#     },
+#     "Rossiya" : {
+#         'Poytaxti' : 'Moskva',
+#         'Hududi' :17980746,
+#         'Aholisi' : 144000000,
+#         "Pul birligi" : "rubl"
+#     },
+#     "AQSH" : {
+#         'Poytaxti' : 'Vashington',
+#         'Hududi' : 92432423,
+#         'Aholisi' : 327000000,
+#         "Pul birligi" : "dollor"
+#     }
+# }
+# davlat = input("Davlat nomini kiriting :")
+# if davlat in davlatlar:
+#     info = davlatlar[davlat]
+#     print(
+#         f" {davlat.upper()}ning poytaxti {info['Poytaxti']} "
+#         f"\n Hududi : {info['Hududi']} "
+#         f"\n Aholisi : {info['Aholisi']} "
+#         f"\n pul birligi : {info['Pul birligi']} "
+#     )
+ismlar = []
+while True:
+    ism = input(" Ism kiriting  : ")
+    ismlar.append(ism)
+    savol = input( " Yana ism qoshasizmi : Ha/Yoq  - ")
+    if savol == 'Ha':
+        continue
+    else :
+        break
 
 
 
