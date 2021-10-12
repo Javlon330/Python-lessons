@@ -187,6 +187,3 @@
     
 #     )
 
-akalar = []
-akalar.append('Yodgor')
-print(akalar)

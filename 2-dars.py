@@ -164,17 +164,35 @@
 #         f"{mijoz['ism'].title()} {mijoz['familiya'].title()},"
 #         f"{mijoz['yoshi']} yoshda, telefoni: {mijoz['telefon']}"
 #     )
-def eng_katta(x,y,z):
-    """ Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya """
-    if x > y:
-        if x > z:
-            maxx = x
-        else :
-            maxx = z
-    elif y > z:
-        maxx = y
-    else :
-        maxx = z
-    return maxx
+# def eng_katta(x,y,z):
+#     """ Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya """
+#     if x > y:
+#         if x > z:
+#             maxx = x
+#         else :
+#             maxx = z
+#     elif y > z:
+#         maxx = y
+#     else :
+#         maxx = z
+#     return maxx
+# # def kattasi(x, y, z):
+# #     max = x
+# #     if y >= max:
+# #         max = y
+# #     if z >= max:
+# #         max = z
+# #     return max
 
-print(eng_katta(12, 24, 1343))
+# print(eng_katta(12, 24, 1343))
+def aylana(r):
+    """Aylana radiusini, diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya"""
+    pi = 3.14
+    doira = {
+        'Radius' : r,
+        'Diametr' : 2*r,
+        'Perimatr' : 2*pi*r,
+        'Yuzi' : pi*r*r
+    }
+    return doira
+print(aylana(float(input("Radiusni kiriting : "))))
