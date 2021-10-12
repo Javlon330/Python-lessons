@@ -130,40 +130,40 @@
 #         min+=step
 #     return sonlar
 # print(oraliq(12,43))
-# def mijoz_info(ism, familiya, tyil, tjoy, email="", tel=None):
-#     """Mijoz haqidagi ma'lumotlarni lug'at ko'rinishida qaytaruvchi funksiya"""
-#     mijoz = {
-#         "ism": ism,
-#         "familiya": familiya,
-#         "tyil": tyil,
-#         "yoshi": 2020 - tyil,
-#         "tjoy": tjoy,
-#         "email": email,
-#         "telefon": tel,
-#     }
-#     return mijoz
+def mijoz_info(ism, familiya, tyil, tjoy, email="", tel=None):
+    """Mijoz haqidagi ma'lumotlarni lug'at ko'rinishida qaytaruvchi funksiya"""
+    mijoz = {
+        "ism": ism,
+        "familiya": familiya,
+        "tyil": tyil,
+        "yoshi": 2020 - tyil,
+        "tjoy": tjoy,
+        "email": email,
+        "telefon": tel,
+    }
+    return mijoz
 
 
-# print("Mijoz haqida ma'lumotlarni kiriting.")
-# mijozlar = []
-# while True:
-#     ism = input("Ismi: ")
-#     familiya = input("Familiyasi: ")
-#     tyil = int(input("Tug'ilgan yili: "))
-#     tjoy = input("Tug'ilgan joyi: ")
-#     email = input("Email: ")
-#     telefon = input("Telefon raqami: ")
-#     mijozlar.append(mijoz_info(ism, familiya, tyil, tjoy, email, telefon)) #man shu joyina tushunmadim
-#     javob = input("Davom etasizmi? (ha/yo'q)")
-#     if javob != "ha":
-#         break
+print("Mijoz haqida ma'lumotlarni kiriting.")
+mijozlar = []
+while True:
+    ism = input("Ismi: ")
+    familiya = input("Familiyasi: ")
+    tyil = int(input("Tug'ilgan yili: "))
+    tjoy = input("Tug'ilgan joyi: ")
+    email = input("Email: ")
+    telefon = input("Telefon raqami: ")
+    mijozlar.append(mijoz_info(ism, familiya, tyil, tjoy, email, telefon)) #man shu joyina tushunmadim
+    javob = input("Davom etasizmi? (ha/yo'q)")
+    if javob != "ha":
+        break
 
-# print("Mijozlar:")
-# for mijoz in mijozlar:
-#     print(
-#         f"{mijoz['ism'].title()} {mijoz['familiya'].title()},"
-#         f"{mijoz['yoshi']} yoshda, telefoni: {mijoz['telefon']}"
-#     )
+print("Mijozlar:")
+for mijoz in mijozlar:
+    print(
+        f"{mijoz['ism'].title()} {mijoz['familiya'].title()},"
+        f"{mijoz['yoshi']} yoshda, telefoni: {mijoz['telefon']}"
+    )
 # def eng_katta(x,y,z):
 #     """ Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya """
 #     if x > y:
@@ -185,14 +185,35 @@
 # #     return max
 
 # print(eng_katta(12, 24, 1343))
-def aylana(r):
-    """Aylana radiusini, diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya"""
-    pi = 3.14
-    doira = {
-        'Radius' : r,
-        'Diametr' : 2*r,
-        'Perimatr' : 2*pi*r,
-        'Yuzi' : pi*r*r
-    }
-    return doira
-print(aylana(float(input("Radiusni kiriting : "))))
+# def aylana(r):
+#     """Aylana radiusini, diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya"""
+#     pi = 3.14
+#     doira = {
+#         'Radius' : r,
+#         'Diametr' : 2*r,
+#         'Perimatr' : 2*pi*r,
+#         'Yuzi' : pi*r*r
+#     }
+#     return doira
+# print(aylana(float(input("Radiusni kiriting : "))))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
