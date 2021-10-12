@@ -117,9 +117,64 @@
 
 # x,y = map(float,input().split())
 # n_daraja(x, y)
-def bol_alomatlari(x):
-    """ Sonlarni bolinish alomatlari """
-    for i in range(2,11):
-        if  not x % i :
-            print(f" {x} - {i} ga qoldiqsiz bolinadi  ")
-bol_alomatlari(float(input(" SOn kiriting : ")))
+# def bol_alomatlari(x):
+#     """ Sonlarni bolinish alomatlari """
+#     for i in range(2,11):
+#         if  not x % i :
+#             print(f" {x} - {i} ga qoldiqsiz bolinadi  ")
+# bol_alomatlari(float(input(" SOn kiriting : ")))
+# def oraliq(min,max,step = 1):
+#     sonlar = []
+#     while min<max:
+#         sonlar.append(min)
+#         min+=step
+#     return sonlar
+# print(oraliq(12,43))
+# def mijoz_info(ism, familiya, tyil, tjoy, email="", tel=None):
+#     """Mijoz haqidagi ma'lumotlarni lug'at ko'rinishida qaytaruvchi funksiya"""
+#     mijoz = {
+#         "ism": ism,
+#         "familiya": familiya,
+#         "tyil": tyil,
+#         "yoshi": 2020 - tyil,
+#         "tjoy": tjoy,
+#         "email": email,
+#         "telefon": tel,
+#     }
+#     return mijoz
+
+
+# print("Mijoz haqida ma'lumotlarni kiriting.")
+# mijozlar = []
+# while True:
+#     ism = input("Ismi: ")
+#     familiya = input("Familiyasi: ")
+#     tyil = int(input("Tug'ilgan yili: "))
+#     tjoy = input("Tug'ilgan joyi: ")
+#     email = input("Email: ")
+#     telefon = input("Telefon raqami: ")
+#     mijozlar.append(mijoz_info(ism, familiya, tyil, tjoy, email, telefon)) #man shu joyina tushunmadim
+#     javob = input("Davom etasizmi? (ha/yo'q)")
+#     if javob != "ha":
+#         break
+
+# print("Mijozlar:")
+# for mijoz in mijozlar:
+#     print(
+#         f"{mijoz['ism'].title()} {mijoz['familiya'].title()},"
+#         f"{mijoz['yoshi']} yoshda, telefoni: {mijoz['telefon']}"
+#     )
+def eng_katta(x,y,z):
+    """ Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya """
+    if x > y:
+        if x > z:
+            maxx = x
+        else :
+            maxx = z
+    elif y > z:
+        maxx = y
+    else :
+        maxx = z
+    return maxx
+
+print(eng_katta(12, 24, 1343))

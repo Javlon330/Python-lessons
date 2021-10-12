@@ -162,15 +162,15 @@
 #         f"\n Aholisi : {info['Aholisi']} "
 #         f"\n pul birligi : {info['Pul birligi']} "
 #     )
-ismlar = []
-while True:
-    ism = input(" Ism kiriting  : ")
-    ismlar.append(ism)
-    savol = input( " Yana ism qoshasizmi : Ha/Yoq  - ")
-    if savol == 'Ha':
-        continue
-    else :
-        break
+# ismlar = []
+# while True:
+#     ism = input(" Ism kiriting  : ")
+#     ismlar.append(ism)
+#     savol = input( " Yana ism qoshasizmi : Ha/Yoq  - ")
+#     if savol.lower() == 'ha':
+#         continue
+#     else :
+#         break
 
 
 
@@ -186,3 +186,7 @@ while True:
 #         f" pul birligi : {pul_birligi} \n "
     
 #     )
+
+akalar = []
+akalar.append('Yodgor')
+print(akalar)
